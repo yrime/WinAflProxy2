@@ -1,0 +1,11 @@
+Build/
+.azurepipelines
+.mailmap
+.pytool
+.DS_Store
+*_extdep/
+*.pyc
+__pycache__/
+tags/
+.vscode/
+.vs/edk2/v16/

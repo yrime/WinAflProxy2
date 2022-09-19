@@ -1,0 +1,35 @@
+
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = EmuAflProxy
+  FILE_GUID                      = 537B2273-9362-FCA4-7A3F-41949F0E4EDB
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.0
+
+  ENTRY_POINT                    = InitializeEmuAflProxy
+
+
+[Sources]
+  ComponentName.c
+  EmuAflProxy.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  EmulatorPkg/EmulatorPkg.dec
+
+
+[LibraryClasses]
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  UefiLib
+  UefiDriverEntryPoint
+  BaseLib
+  DebugLib
+
+
+[Protocols]
+  gEfiAflProxyProtocolGuid							# PROTOCOL BY_START
+  gEmuIoThunkProtocolGuid							# PROTOCOL TO_START
+
