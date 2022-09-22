@@ -17,4 +17,6 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 #include <Uefi/UefiBaseType.h>
 #include <Uefi/UefiSpec.h>
 
+#include <Library/UefiAflProxy.h>
+
 #endif

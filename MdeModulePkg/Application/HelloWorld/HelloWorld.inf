@@ -45,8 +45,9 @@
   UefiApplicationEntryPoint
   UefiLib
   PcdLib
-  UefiBootServicesTableLib
-  UefiRuntimeServicesTableLib
+#  UefiAflProxy
+ # UefiBootServicesTableLib
+ # UefiRuntimeServicesTableLib
 
 [FeaturePcd]
   gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintEnable   ## CONSUMES
@@ -58,6 +59,3 @@
 [UserExtensions.TianoCore."ExtraFiles"]
   HelloWorldExtra.uni
 
-
-[Protocols]
-  gEfiAflProxyProtocolGuid

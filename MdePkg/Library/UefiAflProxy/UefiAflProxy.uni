@@ -1,0 +1,5 @@
+
+#string STR_MODULE_ABSTRACT             #language en-US "UEFI Afl Proxy Library implementation"
+
+#string STR_MODULE_DESCRIPTION          #language en-US "UEFI Afl Proxy Library implementation."
+

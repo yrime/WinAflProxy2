@@ -12,12 +12,15 @@
 #include <Library/UefiLib.h>
 #include <Library/UefiApplicationEntryPoint.h>
 
+//#include <Library/UefiAflProxy.h>
+
+/*
 #include <Library/UefiRuntimeServicesTableLib.h>
 #include <Library/UefiBootServicesTableLib.h>
 #include <Library/UefiRuntimeLib.h>
 
 #include <Protocol/AflProxy.h>
-
+*/
 //
 // String token ID of help message text.
 // Shell supports to find help message in the resource section of an application image if
@@ -47,7 +50,7 @@ UefiMain (
   )
 {
   UINT32  Index;
-
+/*
   EFI_STATUS Status = 0;
 
   EFI_AFL_PROXY_PROTOCOL* AflProxy;
@@ -62,6 +65,8 @@ UefiMain (
       return Status;
   }
   AflProxy->afl_maybe_log(AflProxy, 100);
+*/
+  afl_log2(200);
   Index = 0;
 
   //

@@ -72,6 +72,11 @@
   #                  Only available to DXE and UEFI module types.
   UefiBootServicesTableLib|Include/Library/UefiBootServicesTableLib.h
 
+
+  ##  @libraryclass  Provides a service to retrieve a pointer to the EFI Afl Proxy.
+  #                  Only available to DXE and UEFI module types.
+  UefiAflProxy|Include/Library/UefiAflProxy.h
+
   ##  @libraryclass  Module entry point library for UEFI Applications.
   UefiApplicationEntryPoint|Include/Library/UefiApplicationEntryPoint.h
 
